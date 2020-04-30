@@ -8,8 +8,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         brightness: Brightness.dark,
-        primaryColor: Colors.purple,
-        accentColor: Colors.amber,
+        primaryColor: Color(0xffE64A19),
+        accentColor: Color(0xff795548),
+        textTheme: TextTheme(
+          body1: TextStyle(
+            fontSize: 24,
+            fontStyle: FontStyle.italic,
+          ),
+        ),
       ),
       home: Scaffold(
         appBar: AppBar(
